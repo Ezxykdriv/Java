@@ -16,7 +16,7 @@ public class TesteLeitura {
 		
 		InputStream fis = new FileInputStream("teste.txt");
 		
-		Reader isr = new InputStreamReader(fis);
+		Reader isr = new InputStreamReader(fis, "UTF-8");
 		
 		BufferedReader br = new BufferedReader(isr);
 		

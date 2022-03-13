@@ -28,7 +28,7 @@ public class TesteEscritaFileWriter {
 		
 		//PrintStream ps = new PrintStream(new File("teste2.txt"));
 		
-		PrintWriter ps = new PrintWriter("teste2.txt");
+		PrintWriter ps = new PrintWriter("teste2.txt", "UTF-8");
 		
 		ps.println("A soma dos quadrados dos catetos é igual ao quadrado da hipotenusa");	
 		ps.println();
