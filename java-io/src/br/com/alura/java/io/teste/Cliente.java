@@ -1,16 +1,19 @@
-package br.com.bytebank.banco.modelo;
+package br.com.alura.java.io.teste;
 
 import java.io.Serializable;
 
 /**
  * Classe que representa um cliente no Bytebank.
  *
- * @author Matheus Falcão
+ * @author Matheus Falcï¿½o
  * @version 0.1
  */
 public class Cliente implements Serializable{
 
-    private String nome;
+    
+	private static final long serialVersionUID = 9205117266306915548L;
+	
+	private String nome;
     private String cpf;
     private String profissao;
 
