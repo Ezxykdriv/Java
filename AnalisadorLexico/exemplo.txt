@@ -1,0 +1,27 @@
+int n
+
+int i
+
+int r
+
+escreva "%c" "Digite um numero:"
+
+leia "%i" &n
+
+para i = 1 ate 10 {
+
+  r = i * n
+
+  escreva n
+
+  escreva " x "
+
+  escreva i
+
+  escreva " = "
+
+  escreva r
+
+  escreva "\n"
+
+}
