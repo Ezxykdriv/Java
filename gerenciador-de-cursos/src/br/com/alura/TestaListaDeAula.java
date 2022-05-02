@@ -31,14 +31,7 @@ public class TestaListaDeAula {
 		
 		//após a ordenação por tempo de aula
 		System.out.println(aulas);
-		
-		
-		
-		
-		
-		
-		
-		
+				
 	}
 
 }

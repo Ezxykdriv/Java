@@ -45,6 +45,7 @@ public class TestandoListas {
 		
 		aulas.add(aula1);
 		System.out.println(aulas);
+		
 		Collections.sort(aulas);
 		System.out.println("Depois de ordenado: ");
 		System.out.println(aulas);
