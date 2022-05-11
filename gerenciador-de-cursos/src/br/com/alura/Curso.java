@@ -1,9 +1,11 @@
 package br.com.alura;
 
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 public class Curso {
@@ -12,8 +14,12 @@ public class Curso {
 	private String instrutor;
 	private List<Aula> aulas = new LinkedList<>();
 	private Set<Aluno> alunos = new HashSet<>();
+	private Map<Integer, Aluno> matriculaAluno = new HashMap<>();
 
 	public Curso(String nome, String instrutor) {
+		if (nome == null) {
+			throw new NullPointerException("NOME não pode ser nulo");
+		}
 		this.nome = nome;
 		this.instrutor = instrutor;
 	}
@@ -39,7 +45,10 @@ public class Curso {
 	}
 	
 	public void matricula(Aluno aluno) {
+		// adiciona no Set de alunos
 		this.alunos.add(aluno);
+		// cria a relação no Map
+		this.matriculaAluno.put(aluno.getNumeroMatricula(), aluno);
 	}
 	
 	/*public int getTempoTotal() {
@@ -58,5 +67,13 @@ public class Curso {
 	public String toString() {
 		return "[Curso: " + this.getNome() + ", tempo total: " + this.getTempoTotal() + ", aulas: " + this.getAulas() + "]";
 	}
+	
+	public boolean estaMatriculado(Aluno aluno) {
+		return this.alunos.contains(aluno);
+	}
 
+	public Aluno buscaMatriculado(int numero) {
+		return this.matriculaAluno.get(numero);
+		
+	}
 }

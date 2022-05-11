@@ -38,6 +38,21 @@ public class TestaCursoComAluno {
 		Set<Aluno> alunosSincronizados = Collections.synchronizedSet(alunos);// utilizado para programação paralela, com threads
 		System.out.println(alunosSincronizados);
 		
+		System.out.println();
+		
+		System.out.println("O aluno " + a1.getNome() + " está matriculado?");
+		System.out.println(javaColecoes.estaMatriculado(a1));
+		System.out.println();
+		
+		Aluno cleiton = new Aluno("Cleiton",1);
+		System.out.println("E esse Cleiton, está matriculado?");
+		System.out.println(javaColecoes.estaMatriculado(cleiton));
+		System.out.println();
+		
+		Aluno cleitin = new Aluno("Cleiton",1);
+		System.out.println("E esse Cleiton, está matriculado?");
+		System.out.println(a1.equals(cleitin));
+		System.out.println(javaColecoes.estaMatriculado(cleitin));
+		System.out.println();
 	}
-
 }
