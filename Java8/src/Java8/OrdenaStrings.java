@@ -1,3 +1,4 @@
+		//--------------------------01. Default Methods------------------------
 package Java8;
 
 import java.util.ArrayList;
@@ -42,6 +43,30 @@ public class OrdenaStrings {
 		System.out.println("Usando um forEach que recebe um Consumer");
 		Consumer<String> consumidor = new ConsumidorDeString();
 		palavras.forEach(consumidor);
+		System.out.println();
+		
+		//--------------------------02. Que Venham os Lambdas!------------------------
+		//usando Classes Anônimas e Lâmbdas no Java 8
+		System.out.println("usando Classes Anônimas e Lâmbdas no Java 8");
+		palavras.forEach(s -> System.out.println(s));
+		System.out.println();
+		
+		//usando Intrfaces Funcionais e Lâmbdas no Java 8
+		System.out.println("usando Intrfaces Funcionais e Lâmbdas no Java 8");
+		palavras.sort((s1, s2) -> Integer.compare(s1.length(), s2.length()));
+		System.out.println(palavras);
+		System.out.println();
+		
+		//exercício
+		//new Thread(() -> System.out.println("Executando um Runnable")).start();
+		
+		//--------------------------03. Código mais sucinto com Method References------------------------
+		System.out.println("comparator");
+		palavras.sort(Comparator.comparing(s -> s.length()));
+		palavras.sort(Comparator.comparing(String::length));
+		palavras.sort(String.CASE_INSENSITIVE_ORDER);
+		System.out.println(palavras);
+		System.out.println();
 	}
 
 }
