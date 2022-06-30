@@ -1,7 +1,7 @@
-package Java8;
+package Exercicios;
 
 public class Curso {
-	
+
 	private String nome;
 	private int qtdAlunos;
 	
@@ -9,13 +9,12 @@ public class Curso {
 		this.nome = nome;
 		this.qtdAlunos = qtdAlunos;
 	}
-
+	
 	public String getNome() {
 		return nome;
 	}
-
+	
 	public int getQtdAlunos() {
 		return qtdAlunos;
 	}
-
 }
