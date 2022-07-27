@@ -16,5 +16,6 @@ public class Aula07Arrays02 {
         for (int i = 0; i < nomes.length; i++) {
             System.out.println(nomes[i]);
         }
+        nomes = new String[5];
     }
 }
