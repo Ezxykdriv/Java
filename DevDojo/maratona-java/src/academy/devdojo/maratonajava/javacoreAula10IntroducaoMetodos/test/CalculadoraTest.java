@@ -10,7 +10,25 @@ public class CalculadoraTest {
         calculadora.somaDoisNumeros();
         calculadora.subtraiDoisNumeros();
 
-        calculadora.multiplicaDoisNumeros(10, 20);
+        //parametros
+        calculadora.multiplicaDoisNumeros(10, 20.5f);
+
+        //retorno
+        double result =  calculadora.divideDoisNumeros(20,2);
+        System.out.println(result);
+        System.out.println(calculadora.divideDoisNumeros02(20,0));
+        System.out.println("-----------------------------------");
+        calculadora.imprimeDivisaoDeDoisNumeros(86,0);
+
+        //Parâmetros tipo primitivo
+        int num1 = 1;
+        int num2 = 2;
+        calculadora.alteraDoisNumeros(num1,num2);
+        System.out.println("Dentro CalculadoraTest");
+        System.out.println("Num1 " + num1);
+        System.out.println("Num2 " + num2);
+
+        //Parâmetros tipo referência
 
     }
 }
