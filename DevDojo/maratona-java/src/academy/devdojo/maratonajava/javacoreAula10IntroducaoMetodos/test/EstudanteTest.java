@@ -27,5 +27,9 @@ public class EstudanteTest {
         ImpressoraEstudante impressora = new ImpressoraEstudante();
         impressora.imprime(estudante1);
         impressora.imprime(estudante2);
+
+        estudante1.imprime();
+
+        estudante2.imprime();
     }
 }

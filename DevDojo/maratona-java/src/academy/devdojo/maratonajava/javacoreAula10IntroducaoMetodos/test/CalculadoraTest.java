@@ -29,6 +29,8 @@ public class CalculadoraTest {
         System.out.println("Num2 " + num2);
 
         //Parâmetros tipo referência
-
+        int[] numeros = {1,2,3,4,5};
+        calculadora.somaArray(numeros);
+        calculadora.somaVarArgs(1,2,3,4,5,6,7);
     }
 }
