@@ -5,8 +5,7 @@ import academy.devdojo.maratonajava.javacore.Aula11SobrecargaDeMetodos.dominio.A
 public class AnimeTest {
     public static void main(String[] args) {
         Anime anime = new Anime();
-        anime.setTipo("TV");
-        anime.setEpisodios(12);
+        anime.init("Akudama Drive", "TV", 12, "ação");
         anime.imprime();
     }
 }
