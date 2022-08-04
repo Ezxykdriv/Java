@@ -1,6 +1,7 @@
 package academy.devdojo.maratonajava.javacore.Aula15Associacao.test;
 
 import academy.devdojo.maratonajava.javacore.Aula15Associacao.dominio.Jogador;
+import academy.devdojo.maratonajava.javacore.Aula15Associacao.dominio.Time;
 
 public class JogadorTest {
     public static void main(String[] args) {
@@ -12,6 +13,14 @@ public class JogadorTest {
         for (Jogador jogador : jogadores) {
             jogador.imprime();
         }
+        Time time = new Time("Seleção Brasilseira");
+        jogador1.setTime(time);
+        jogador1.imprime();
 
+        time.setJogadores(jogadores);
+        System.out.println("---------Jogador--------");
+        jogador1.imprime();
+        System.out.println("---------Time--------");
+        time.imprime();
     }
 }
