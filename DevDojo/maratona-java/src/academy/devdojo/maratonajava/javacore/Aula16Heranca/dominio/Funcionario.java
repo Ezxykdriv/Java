@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.Aula15Heranca.dominio;
+package academy.devdojo.maratonajava.javacore.Aula16Heranca.dominio;
 
 public class Funcionario extends Pessoa {
 

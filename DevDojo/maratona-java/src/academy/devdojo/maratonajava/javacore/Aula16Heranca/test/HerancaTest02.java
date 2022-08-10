@@ -1,6 +1,6 @@
-package academy.devdojo.maratonajava.javacore.Aula15Heranca.test;
+package academy.devdojo.maratonajava.javacore.Aula16Heranca.test;
 
-import academy.devdojo.maratonajava.javacore.Aula15Heranca.dominio.Funcionario;
+import academy.devdojo.maratonajava.javacore.Aula16Heranca.dominio.Funcionario;
 
 public class HerancaTest02 {
     // 0 - Bloco de inicialização estático da super classe é executado quando a JVM carregar classe pai
