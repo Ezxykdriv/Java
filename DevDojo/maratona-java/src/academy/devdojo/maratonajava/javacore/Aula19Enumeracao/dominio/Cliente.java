@@ -2,10 +2,10 @@ package academy.devdojo.maratonajava.javacore.Aula19Enumeracao.dominio;
 
 public class Cliente {
     private String nome;
-    private String tipoCliente;
-    private String tipoPagamento;
+    private TipoCliente tipoCliente;
+    private TipoPagamento tipoPagamento;
 
-    public Cliente(String nome, String tipoCliente, String tipoPagamento) {
+    public Cliente(String nome, TipoCliente tipoCliente, TipoPagamento tipoPagamento) {
         this.nome = nome;
         this.tipoCliente = tipoCliente;
         this.tipoPagamento = tipoPagamento;
