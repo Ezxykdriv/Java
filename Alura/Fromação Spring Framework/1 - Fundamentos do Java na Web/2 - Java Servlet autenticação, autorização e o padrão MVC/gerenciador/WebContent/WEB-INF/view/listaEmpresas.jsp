@@ -11,13 +11,13 @@
 <title>Java Standard Taglib</title>
 </head>
 <body>
+	<c:import url="logout-parcial.jsp" />
 
-
-Usuario Logado: ${usuarioLogado.login }
-
-    <br>
-    <br>
-    <br>
+	Usuario Logado: ${usuarioLogado.login }
+	
+	<br>
+	<br>
+	<br>
 
 	<c:if test="${not empty empresa}">
 		Empresa ${ empresa } cadastrada com sucesso!
@@ -30,8 +30,8 @@ Usuario Logado: ${usuarioLogado.login }
 			
 			<li>
 				${empresa.nome } - <fmt:formatDate value="${empresa.dataAbertura }" pattern="dd/MM/yyyy"/> 
-				<a href="/gerenciador/entrada?acao=MostraEmpresa&id=${empresa.id }">editar</a>
-				<a href="/gerenciador/entrada?acao=RemoveEmpresa&id=${empresa.id }">remover</a>
+				<a href="/gerenciador/entrada?acao=MostraEmpresa&id=${empresa.id }">edita</a>
+				<a href="/gerenciador/entrada?acao=RemoveEmpresa&id=${empresa.id }">remove</a>
 			</li>
 		</c:forEach>
 	</ul>
