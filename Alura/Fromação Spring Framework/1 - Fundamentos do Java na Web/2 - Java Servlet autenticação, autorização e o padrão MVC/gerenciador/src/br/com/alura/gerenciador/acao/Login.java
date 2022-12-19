@@ -13,7 +13,8 @@ import br.com.alura.gerenciador.modelo.Usuario;
 public class Login implements Acao {
 
 	@Override
-	public String executa(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	public String executa(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		
 		String login = request.getParameter("login");
 		String senha = request.getParameter("senha");
@@ -31,5 +32,8 @@ public class Login implements Acao {
 		} else {
 			return "redirect:entrada?acao=LoginForm";
 		}
+		
+		
 	}
+
 }

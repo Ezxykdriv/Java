@@ -28,5 +28,4 @@ public class Empresa {
 	public Date getDataAbertura() {
 		return dataAbertura;
 	}
-	
 }

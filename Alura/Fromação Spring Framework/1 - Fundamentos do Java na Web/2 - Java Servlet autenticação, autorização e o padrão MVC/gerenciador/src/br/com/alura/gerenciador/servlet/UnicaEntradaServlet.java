@@ -12,7 +12,7 @@ import javax.servlet.http.HttpSession;
 
 import br.com.alura.gerenciador.acao.Acao;
 
-@WebServlet("/entrada")
+//@WebServlet(urlPatterns="/entrada")
 public class UnicaEntradaServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -47,5 +47,31 @@ public class UnicaEntradaServlet extends HttpServlet {
 		} else {
 			response.sendRedirect(tipoEEndereco[1]);
 		}
+		
+		
+		//paramAcao.executa(req,res)
+		
+//		String nome = null;
+//		if(paramAcao.equals("ListaEmpresas")) {
+//			ListaEmpresas acao = new ListaEmpresas();
+//			nome = acao.executa(request, response);
+//		} else if(paramAcao.equals("RemoveEmpresa")) {
+//			RemoveEmpresa acao = new RemoveEmpresa();
+//			nome = acao.executa(request, response);
+//		} else if(paramAcao.equals("MostraEmpresa")) {
+//			MostraEmpresa acao = new MostraEmpresa();
+//			nome = acao.executa(request, response);
+//		} else if(paramAcao.equals("AlteraEmpresa")) {
+//			AlteraEmpresa acao = new AlteraEmpresa();
+//			nome = acao.executa(request, response);
+//		} else if(paramAcao.equals("NovaEmpresa")) {
+//			NovaEmpresa acao = new NovaEmpresa();
+//			nome = acao.executa(request, response);
+//		} else if(paramAcao.equals("NovaEmpresaForm")) {
+//			NovaEmpresaForm acao = new NovaEmpresaForm();
+//			nome = acao.executa(request, response);
+//		}
+		
 	}
+
 }
