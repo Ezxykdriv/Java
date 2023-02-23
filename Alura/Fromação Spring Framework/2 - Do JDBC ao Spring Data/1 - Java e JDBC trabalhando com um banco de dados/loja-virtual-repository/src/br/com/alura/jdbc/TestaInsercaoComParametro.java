@@ -1,3 +1,4 @@
+package br.com.alura.jdbc;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -12,7 +13,8 @@ public class TestaInsercaoComParametro {
 
 			connection.setAutoCommit(false);
 
-			try (PreparedStatement stm = connection.prepareStatement("INSERT INTO PRODUTO (nome, descricao) VALUES (?, ?)", Statement.RETURN_GENERATED_KEYS)) {
+			try (PreparedStatement stm = connection.prepareStatement(
+					"INSERT INTO PRODUTO (nome, descricao) VALUES (?, ?)", Statement.RETURN_GENERATED_KEYS)) {
 				adicionarVariavel("SmarTV", "45 polegadas", stm);
 				adicionarVariavel("Radio", "Radio de bateria", stm);
 
